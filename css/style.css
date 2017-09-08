@@ -30,7 +30,7 @@ html, body  {
 .header {
   width: 100%;
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 1px;
   margin-bottom: 4rem;
   background: rgba(0, 0, 0, 0.1);
 }
