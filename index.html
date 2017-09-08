@@ -1,0 +1,289 @@
+<!-- This website is the property of @shamelin. No reproduction authorized. All rights reserved. -->
+<!DOCTYPE html>
+  <html lang="fr">
+    <!-- Header. Includes title, metas and other files required -->
+    <head>
+      <!-- Title of the page and icon -->
+      <title>Simon Hamelin | Fullstack developer</title>
+      <link rel="icon" href="img/icon.ico">
+
+      <!-- Metas -->
+      <meta charset="UTF-8">
+      <meta name="author" content="@shamelin">
+      <meta name="keywords" content="dev,development,développement,coder,codeur,html,css,php,javascript,js,programming,programmation,programmes,programs,project,projects,projet,projets,code,hosting,hébergement,os,operating system,système d'exploitation,github,windows,mac,linux,ubuntu,java">
+      <meta name="description" content="Créateur de projets et de sites Internet depuis 2012.">
+
+      <!-- Fonts imports -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!-- CSS imports -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+      <!-- JS imports -->
+      <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    </head>
+
+    <!-- Contains all the content of the page -->
+    <body>
+
+      <div class="header">
+        <div id="home"></div>
+
+        <!-- Navigation (Sticky) -->
+        <div class="nav navigation">
+          <ul>
+            <div class="left">
+              <li style="margin: 0 30px;">Menu</li>
+              <li class="mobile-toggle right"><a><span class="fa fa-bars"></span></a></li>
+            </div>
+
+            <div class="right">
+              <li><a class="home">Home</a></li>
+              <li><a class="about">About</a></li>
+              <li><a class="portfolio">Portfolio</a></li>
+              <li><a class="competences">Competences</a></li>
+              <li><a class="contact">Contact</a></li>
+              <li><a class="social-networks">Social networks</a></li>
+            </div>
+          </ul>
+        </div>
+
+        <!-- About me -->
+        <div class="top-info">
+          <div class="social-networks">
+            <div class="left">
+              <div class="facebook"><a href="https://www.freelancer.ca/u/shamelindev" target="_blank"><span class="fa fa-briefcase"></span></a></div>
+              <div class="twitter"><a href="https://stackoverflow.com/users/7375212/simon-hamelin" target="_blank"><span class="fa fa-stack-overflow"></span></a></div>
+            </div>
+
+            <div class="middle">
+              <span class="ppic"><img src="img/shamelin.gif" title="Simon Hamelin" width="100"></span>
+            </div>
+
+            <div class="right">
+              <div class="github"><a href="https://www.github.com/shamelin" target="_blank"><span class="fa fa-github"></span></a></div>
+              <div class="twitter"><a href="mailto:shamelin@noctin.io" target="_top"><span class="fa fa-envelope"></span></a></div>
+            </div>
+          </div>
+
+          <div class="name">Simon Hamelin</div>
+
+          <div class="text">Fullstack developer. Vice-president of <a href="https://twitter.com/uphoriadev" target="_blank">Uphoria</a> and creator of <a href="https://noctin.io/" target="_blank">Noctin</a>.<br> 
+          <span style="font-size: 12px; font-style: italic; position: relative; top: -2px;">(Don't say it, but I also like to play <a href="https://twitter.com/PlayOverwatch" target="_blank">Overwatch</a>)</span></div>
+        </div>
+      </div>
+
+      <!-- Another abot me info, but more specific... -->
+      <div class="about panel" id="about">
+        <div class="title">About</div>
+
+        <p>Howdy! My name is Simon and I am a fullstack developer since 2012. I develop web applications and programs of all type
+          for the public. Programmation being my passion, I am currently doing studies for becoming a Software Engineer.</p>
+
+        <p>In September 2016, I joined <a href="https://twitter.com/uphoriadev" target="_blank">Uphoria</a>, a team of developers from all around the world. 
+        We are currently developping more than five projects simultaneously. The project on which I am working the most, Noctin, is a brand new and innovative piece of
+        technology that will be revealed in January 2018. More information will be coming out soon. Stay tuned!</p>
+
+        <p>I also <b>love</b> playing Overwatch. It is definitely my favorite game of all time. I currently played more than 150 hours on this a-mei-zing game and there is no sign of stopping soon. <i>Can't stop won't stop!</i></p>
+
+        <p>For the users that want to see the source code of my projects, I invite you to take a look at my <a href="https://www.github.com/shamelin" target="_blank">GitHub account</a>.</p>
+        <p>Would you like to know more about me or do you have a question? <a onclick="goto('contact');">Contact me</a>, I will be more than happy to answer to your questions!</p>
+      </div>
+
+      <!-- List of all my portfolio (More is coming on the way...) -->
+      <div class="portfolio panel" id="portfolio">
+        <div class="title">Portfolio</div>
+
+        <div class="currently-in-development">I am currently developing applications.<br>They will be available once they will be fully finished!</div>
+      </div>
+
+      <!-- List of all the competences I acquired. There may be some that I forgot, but anyway... -->
+      <div class="competences panel" id="competences">
+        <div class="title">Competences</div>
+
+        <p>Here is a list of all my competences. The progress bar represents my knowledge of the language and my confidence while using it.</p>
+
+        <div class="competences-tree">
+          <div class="compentence">
+            Java (<a href="https://en.wikipedia.org/wiki/Java_(langage)" target="_blank">Java</a>): 95%
+
+            <div class="progress">
+                <div class="determinate" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            HTML 5 (<a href="https://en.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank">Hypertext Markup Language 5</a>): 95%
+
+            <div class="progress">
+                <div class="determinate" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            CSS 3 (<a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">Cascading Style Sheets 3</a>): 90%
+
+            <div class="progress">
+                <div class="determinate" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            SASS (<a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" target="_blank">Syntactically awesome stylesheets</a>): 80%
+
+            <div class="progress">
+                <div class="determinate" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            PHP (<a href="https://en.wikipedia.org/wiki/PHP" target="_blank">PHP: Hypertext Preprocessor</a>): 85%
+
+            <div class="progress">
+                <div class="determinate" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            Javascript (<a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Javacript</a>): 80%
+
+            <div class="progress">
+                <div class="determinate" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            Python (<a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a>): 75%
+
+            <div class="progress">
+                <div class="determinate" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            C++ (<a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++</a>): 65% (Learning)
+
+            <div class="progress">
+                <div class="determinate" style="width: 65%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            Ruby (<a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank">Ruby</a>): 10% (Learning)
+
+            <div class="progress">
+                <div class="determinate" style="width: 10%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            ReactJS (<a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank">ReactJS</a>): 30% (Learning)
+
+            <div class="progress">
+                <div class="determinate" style="width: 30%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            Unreal Engine (<a href="https://en.wikipedia.org/wiki/Unreal_Engine" target="_blank">Unreal Engine</a>): 15% (Learning)
+
+            <div class="progress">
+                <div class="determinate" style="width: 15%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            C# (<a href="https://en.wikipedia.org/wiki/C_sharp" target="_blank">C#</a>): 20% (Learning)
+
+            <div class="progress">
+                <div class="determinate" style="width: 20%"></div>
+            </div>
+          </div>
+
+          <div class="compentence">
+            Unity 3D (<a href="https://en.wikipedia.org/wiki/Unity_(moteur_de_jeu)" target="_blank">Unity 3D</a>): 5% (Learning)
+
+            <div class="progress">
+                <div class="determinate" style="width: 5%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two side panel -->
+      <div class="panel" id="panel" style="background: transparent; padding: 0;">
+
+        <!-- Ways to contact me -->
+        <div class="social-networks panel" id="contact" style="background: #242424; width: calc(40% - 8px); display: inline-block; float: right; margin-left: 8px !important;">
+          <div class="title">Social networks</div>
+
+          <div class="social-network">Battle.net: <a href="https://masteroverwatch.com/profile/pc/us/Hex-12704" target="_blank">Hex#12704</a></div>
+          <div class="social-network">Steam: <a href="https://steamcommunity.com/id/shamelindev" target="_blank">Hex</a></div>
+          <div class="social-network">Discord: <a href="https://discordapp.com/" target="_blank">Hex#3832</a></div>
+          <div class="social-network">GitHub: <a href="https://github.com/shamelin" target="_blank">shamelin</a></div>
+          <div class="social-network">Stack Overflow: <a href="https://stackoverflow.com/users/7375212/simon-hamelin" target="_blank">Simon Hamelin</a></div>
+          <div class="social-network">E-mail address: <a href="mailto:shamelin@noctin.io" target="_top">shamelin@noctin.io</a></div>
+          <div class="social-network">PGP: F2FD B4E9 5B0C ACF3 2100 A5E3 25B3 AB7C A6C2 24EB</div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact panel" id="social-networks" style="background: #242424; width: 60%; margin-left: auto; display: inline-block;">
+          <div class="title">Contact</div>
+
+          <p>Would you like to contact me? No problem! All you have to do is fill the form below and click on the <i>submit</i> button.
+            I will answer you as fast as possible.</p>
+
+          <form action="index.php" method="POST" style="width: 90%; margin-top: 2rem; margin-left: auto !important; margin-right: auto !important;">
+            <div class="input-field col s6">
+              <input id="name" type="text" class="validate" name="name">
+              <label for="name">Your name</label>
+            </div>
+
+            <div class="input-field col s6" style="margin-bottom: 2rem;">
+              <input id="email" type="text" class="validate" name="email">
+              <label for="email">Your email address</label>
+            </div>
+
+            <div class="input-field col s6" style="margin-bottom: 2rem;">
+              <input id="title" type="text" class="validate" name="title">
+              <label for="title">Title of the message</label>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="message" class="materialize-textarea" name="message"></textarea>
+              <label for="message">Message</label>
+            </div>
+
+            <div class="g-recaptcha" data-sitekey="6LeObBITAAAAAMTuZNKsWYckmrjvExjmKtukhwja"></div>
+
+            <button type="submit" name="contact" class="waves-effect waves-light btn" style="margin-left: auto !important; margin-right: auto !important; width: 60%; display: block; margin-top: 2rem; height: 50px; background: #303030; color: #A6A6A6;" disabled="disabled">Submit (unavailable)</button>
+          </form>
+        </div>
+      </div>
+    </body>
+
+    <!-- Page javascript code -->
+    <script type="text/javascript">
+
+      $( document ).ready(function() {
+        $( '.nav div.left li.mobile-toggle' ).on('click', function() {
+          $( '.nav div.right' ).slideToggle( 'fast' );
+        });
+
+        $( '.nav div.right li a' ).on('click', function(e) {
+          var div = $( this ).attr('class');
+          $('html, body').animate({scrollTop: $("#" + div).offset().top - 70}, 500);
+        });
+
+        goto = function(id) {
+          $('html, body').animate({scrollTop: $("#" + id).offset().top - 70}, 500);
+        }
+      });
+    </script>
+  </html>
