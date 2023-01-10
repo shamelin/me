@@ -1,4 +1,6 @@
 ---
+import Section from "./Section.astro";
+
 import { Image } from "@astrojs/image/components";
 
 import meImage from "@assets/img/me.png";
@@ -78,6 +80,24 @@ import meImage from "@assets/img/me.png";
       <i class="fa-solid fa-envelope"></i>
     </a>
   </div>
+
+  <div class="introduction">
+    <p>
+      Hello! I'm Simon, a full-stack developer. I love to build websites as well
+      as server-side programs that help accomplish great things. I'm currently
+      attending university to become a Computer Engineer. During my free time, I
+      work on personal projects that can range from a simple website to systems
+      powered by Artificial Intelligence. I'm always looking for new
+      opportunities, and working with people drives me to do my best. Don't
+      hesitate to contact me if you'd like to discuss something!
+    </p>
+  </div>
+
+  <div class="sections">
+    <Section name="Portfolio" to="#" disabled />
+    <Section name="Tech stack" to="#" disabled />
+    <Section name="CV" to="/resume.pdf" target="_blank" />
+  </div>
 </div>
 
 <style>
@@ -102,6 +122,7 @@ import meImage from "@assets/img/me.png";
   }
 
   .socials {
+    display: inline-block;
     margin: 0.5rem 0 1rem 0;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 200px;
@@ -128,9 +149,27 @@ import meImage from "@assets/img/me.png";
   }
 
   .social i {
-    color: #3242a3;
+    color: #3343a4;
     font-size: 18px;
     padding: 0;
     margin: auto;
+  }
+
+  .introduction {
+    max-width: 40vw;
+  }
+
+  .introduction p {
+    margin-top: 8px;
+    text-align: center;
+    display: inline-flex;
+    font-size: 21px;
+    font-weight: 400;
+    color: white;
+    line-height: 28px;
+  }
+
+  .sections {
+    margin-top: 16px;
   }
 </style>
