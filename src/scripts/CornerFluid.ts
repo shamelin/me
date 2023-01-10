@@ -16,7 +16,6 @@
  */
 
 const BUMP_RADIUS: number = 100;
-const HALF_PI: number = Math.PI / 2;
 
 export type Position = "bottom-left" | "top-right";
 
@@ -79,7 +78,7 @@ export class CornerFluid {
      * Execute this function multiple times to get a smooth animation.
      */
     update(c: CanvasRenderingContext2D) {
-        this.theta += 0.03;
+        this.theta += 0.01;
         this.thetaRamp += (this.thetaRampDest - this.thetaRamp) / this.thetaRampDelta;
 
         // We recalculate the wobbles for each segment.

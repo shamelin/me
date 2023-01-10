@@ -1,9 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+
+import Layout from '@layouts/Layout.astro';
+import Profile from '@components/Profile.astro';
+
 ---
 
 <Layout title="Simon Hamelin - About me">
 	<div id="content">
+		<Profile />
 	</div>
 </Layout>
 
@@ -25,6 +29,10 @@ import Layout from '../layouts/Layout.astro';
 		top: 0;
 		left: 0;
 		z-index: 1;
+		display: flex;
+		margin: auto;
+		width: 100%;
+		height: 100%;
 	}
 </style>
 
