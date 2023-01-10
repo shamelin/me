@@ -1,0 +1,43 @@
+---
+const { name, to, disabled, target } = Astro.props;
+---
+
+<a class={disabled ? "section disabled" : "section"} href={to} target={target}>
+  <i class="fa-sharp fa-solid fa-chevron-right"></i>
+  <p>{name}</p>
+</a>
+
+<style>
+  .section {
+    display: inline-flex;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 21px;
+    transition: color 150ms ease-in-out;
+    margin-right: 32px;
+  }
+
+  .section:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .section:last-of-type {
+    margin-right: 0;
+  }
+
+  .section.disabled {
+    color: rgba(255, 255, 255, 0.15);
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .section * {
+    display: inline-flex;
+    margin: auto 0;
+  }
+
+  p {
+    margin-left: 8px !important;
+    font-weight: 600;
+  }
+</style>

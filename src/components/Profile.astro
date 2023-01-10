@@ -1,0 +1,175 @@
+---
+import Section from "./Section.astro";
+
+import { Image } from "@astrojs/image/components";
+
+import meImage from "@assets/img/me.png";
+---
+
+<div class="profile">
+  <div class="image">
+    <Image
+      class="profile-pic"
+      src={meImage}
+      format="webp"
+      alt="Me"
+      title="This is me!"
+      width="192"
+      height="192"
+    />
+  </div>
+
+  <h1>Simon Hamelin</h1>
+
+  <div class="socials">
+    <a
+      class="social"
+      href="https://stackoverflow.com/users/20914374/hex"
+      title="Stack Overflow profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-stack-overflow"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://github.com/shamelin"
+      title="GitHub profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://gitlab.com/shamelin"
+      title="GitLab profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-gitlab" style="font-size: 16px;"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://discord.com/users/206140115339182080"
+      title="Discord profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-discord" style="font-size: 16px;"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://hub.docker.com/u/shamelinhex"
+      title="Docker Hub profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-docker"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://www.linkedin.com/in/shamelin/"
+      title="LinkedIn profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a class="social" href="mailto:hi@shamelin.me" title="Send me an e-mail!">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  </div>
+
+  <div class="introduction">
+    <p>
+      Hello! I'm Simon, a full-stack developer. I love to build websites as well
+      as server-side programs that help accomplish great things. I'm currently
+      attending university to become a Computer Engineer. During my free time, I
+      work on personal projects that can range from a simple website to systems
+      powered by Artificial Intelligence. I'm always looking for new
+      opportunities, and working with people drives me to do my best. Don't
+      hesitate to contact me if you'd like to discuss something!
+    </p>
+  </div>
+
+  <div class="sections">
+    <Section name="Portfolio" to="#" disabled />
+    <Section name="Tech stack" to="#" disabled />
+    <Section name="CV" to="/resume.pdf" target="_blank" />
+  </div>
+</div>
+
+<style>
+  .profile {
+    margin: auto;
+    text-align: center;
+  }
+
+  .profile-pic {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.15);
+    margin: auto;
+  }
+
+  h1 {
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0.67rem;
+  }
+
+  .socials {
+    display: inline-block;
+    margin: 0.5rem 0 1rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 200px;
+    padding: 8px 18px;
+  }
+
+  .social {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    text-decoration: none;
+    transition: background 150ms;
+    margin-right: 8px;
+  }
+
+  .social:last-of-type {
+    margin-right: 0;
+  }
+
+  .social:hover {
+    background: rgba(255, 255, 255, 0.55);
+  }
+
+  .social i {
+    color: #3343a4;
+    font-size: 18px;
+    padding: 0;
+    margin: auto;
+  }
+
+  .introduction {
+    max-width: 40vw;
+  }
+
+  .introduction p {
+    margin-top: 8px;
+    text-align: center;
+    display: inline-flex;
+    font-size: 21px;
+    font-weight: 400;
+    color: white;
+    line-height: 28px;
+  }
+
+  .sections {
+    margin-top: 16px;
+  }
+</style>

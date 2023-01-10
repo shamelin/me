@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<meta name="generator" content="Astro v1.9.1">
+		<title>Simon Hamelin - About me</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+		<script src="https://kit.fontawesome.com/a8a16c0789.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/assets/index.6bc14531.css" /><script type="module">class d{canvas;c;elements=[];hueGradientStart=215;hueGradientEnd=225;gradient;constructor(){this.canvas=document.createElement("canvas"),this.c=this.canvas.getContext("2d"),this.canvas.id="background",this.canvas.width=window.innerWidth,this.canvas.height=window.innerHeight,this.gradient=this.c?.createLinearGradient(0,this.canvas.height,this.canvas.width,0),this.gradient?.addColorStop(0,"#283593"),this.gradient?.addColorStop(1,"#3f51b5"),document.body.appendChild(this.canvas)}addElement(t){this.elements.push(t)}draw(){if(!!this.c){this.canvas.width=window.innerWidth,this.canvas.height=window.innerHeight,this.c.clearRect(0,0,this.canvas.width,this.canvas.height),this.gradient&&(this.c.fillStyle=this.gradient,this.c.fillRect(0,0,this.canvas.width,this.canvas.height));for(let t=0;t<this.elements.length;t++)this.elements[t].update(this.c);window.requestAnimationFrame(()=>this.draw())}}}const o=100;class c{position;color;size;segments;step;scaleX;scaleY;theta=0;thetaRamp=0;thetaRampDest=12;thetaRampDelta=25;wobbleIncrement=0;anchors=[];radii=[];wobbles=[];constructor(t,e,a,s,i,n){this.position=t,this.color=e,this.size=a,this.segments=s,this.scaleX=i,this.scaleY=n,this.step=Math.PI/(2*this.segments);for(let h=0;h<this.segments+2;h++)this.anchors.push(h*this.step),this.radii.push(Math.random()*o-o/2),this.wobbles.push(Math.random()*2*Math.PI)}update(t){this.theta+=.005,this.thetaRamp+=(this.thetaRampDest-this.thetaRamp)/this.thetaRampDelta,this.anchors=[];for(let e=0;e<=this.segments+2;e++){const a=Math.sin(this.wobbles[e]+this.theta+this.thetaRamp),s=this.size+this.radii[e]*a,i=this.step*e,n=s*Math.cos(i),h=s*Math.sin(i);switch(this.position){case"bottom-left":this.anchors.push(n,-h);break;case"top-right":this.anchors.push(-n,h);break}}switch(t.save(),this.position){case"bottom-left":t.translate(0,window.innerHeight+10);break;case"top-right":t.translate(window.innerWidth+10,0);break}t.scale(this.scaleX,this.scaleY),t.fillStyle=this.color,t.beginPath(),t.moveTo(0,0),this.drawBezierCurve(t,this.anchors),t.lineTo(0,0),t.fill(),t.restore()}getAnchors(){return this.anchors}average(t){const e=[];let a;for(let s=2;s<t.length;s++)a=s-2,e.push((t[a]+t[s])/2);return e.push((t[0]+t[t.length-2])/2,(t[1]+t[t.length-1])/2),e}drawBezierCurve(t,e){const a=this.average(e);t.moveTo(e[0],e[1]),t.lineTo(a[0],a[1]);for(let s=2;s<e.length-2;s+=2)t.quadraticCurveTo(e[s],e[s+1],a[s],a[s+1]);t.lineTo(e[e.length-2],e[e.length-1])}}const r=new d,g=new c("bottom-left","rgba(0, 0, 0, 0.15)",900,10,1,.75),m=new c("top-right","rgba(0, 0, 0, 0.25)",900,10,1,.75);r.addElement(g);r.addElement(m);r.draw();
+</script></head>
+	<body>
+		<div id="content">
+		<div class="profile astro-XWHN2YDO">
+  <div class="image astro-XWHN2YDO">
+    <img class="profile-pic astro-XWHN2YDO" alt="Me" title="This is me!" width="192" height="192" src="/assets/me.6043e1f4_Z1TmFfO.webp" loading="lazy" decoding="async">
+  </div>
+
+  <h1 class="astro-XWHN2YDO">Simon Hamelin</h1>
+
+  <div class="socials astro-XWHN2YDO">
+    <a class="social astro-XWHN2YDO" href="https://stackoverflow.com/users/20914374/hex" title="Stack Overflow profile" target="_blank">
+      <i class="fa-brands fa-stack-overflow astro-XWHN2YDO"></i>
+    </a>
+
+    <a class="social astro-XWHN2YDO" href="https://github.com/shamelin" title="GitHub profile" target="_blank">
+      <i class="fa-brands fa-github astro-XWHN2YDO"></i>
+    </a>
+
+    <a class="social astro-XWHN2YDO" href="https://gitlab.com/shamelin" title="GitLab profile" target="_blank">
+      <i class="fa-brands fa-gitlab astro-XWHN2YDO" style="font-size: 16px;"></i>
+    </a>
+
+    <a class="social astro-XWHN2YDO" href="https://discord.com/users/206140115339182080" title="Discord profile" target="_blank">
+      <i class="fa-brands fa-discord astro-XWHN2YDO" style="font-size: 16px;"></i>
+    </a>
+
+    <a class="social astro-XWHN2YDO" href="https://hub.docker.com/u/shamelinhex" title="Docker Hub profile" target="_blank">
+      <i class="fa-brands fa-docker astro-XWHN2YDO"></i>
+    </a>
+
+    <a class="social astro-XWHN2YDO" href="https://www.linkedin.com/in/shamelin/" title="LinkedIn profile" target="_blank">
+      <i class="fa-brands fa-linkedin astro-XWHN2YDO"></i>
+    </a>
+
+    <a class="social astro-XWHN2YDO" href="mailto:hi@shamelin.me" title="Send me an e-mail!">
+      <i class="fa-solid fa-envelope astro-XWHN2YDO"></i>
+    </a>
+  </div>
+
+  <div class="introduction astro-XWHN2YDO">
+    <p class="astro-XWHN2YDO">
+      Hello! I'm Simon, a full-stack developer. I love to build websites as well
+      as server-side programs that help accomplish great things. I'm currently
+      attending university to become a Computer Engineer. During my free time, I
+      work on personal projects that can range from a simple website to systems
+      powered by Artificial Intelligence. I'm always looking for new
+      opportunities, and working with people drives me to do my best. Don't
+      hesitate to contact me if you'd like to discuss something!
+    </p>
+  </div>
+
+  <div class="sections astro-XWHN2YDO">
+    <a class="section disabled astro-ZV52H5VL" href="#">
+  <i class="fa-sharp fa-solid fa-chevron-right astro-ZV52H5VL"></i>
+  <p class="astro-ZV52H5VL">Portfolio</p>
+</a>
+
+
+    <a class="section disabled astro-ZV52H5VL" href="#">
+  <i class="fa-sharp fa-solid fa-chevron-right astro-ZV52H5VL"></i>
+  <p class="astro-ZV52H5VL">Tech stack</p>
+</a>
+
+
+    <a class="section astro-ZV52H5VL" href="/resume.pdf" target="_blank">
+  <i class="fa-sharp fa-solid fa-chevron-right astro-ZV52H5VL"></i>
+  <p class="astro-ZV52H5VL">CV</p>
+</a>
+
+
+  </div>
+</div>
+
+
+	</div>
+	
+</body></html>
+
+
+
