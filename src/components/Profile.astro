@@ -157,6 +157,22 @@ import meImage from "@assets/img/me.png";
 
   .introduction {
     max-width: 40vw;
+    text-align: center;
+    margin: auto;
+  }
+
+  @media screen and (max-height: 650px) {
+    .profile {
+      margin-top: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .introduction {
+      max-width: 80vw;
+      text-align: center;
+      margin: auto;
+    }
   }
 
   .introduction p {
@@ -171,5 +187,6 @@ import meImage from "@assets/img/me.png";
 
   .sections {
     margin-top: 16px;
+    margin-bottom: 3rem;
   }
 </style>
