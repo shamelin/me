@@ -17,7 +17,9 @@ const { title } = Astro.props;
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+		<script src="https://kit.fontawesome.com/a8a16c0789.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<slot />
@@ -29,7 +31,7 @@ const { title } = Astro.props;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	}
 	html {
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Sofia Sans', sans-serif;
 		background-color: #F6F6F6;
 	}
 	code {

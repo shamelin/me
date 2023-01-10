@@ -1,46 +1,136 @@
 ---
+import { Image } from "@astrojs/image/components";
 
-import { Image } from '@astrojs/image/components';
-
-import meImage from '@assets/img/me.png';
-
+import meImage from "@assets/img/me.png";
 ---
 
 <div class="profile">
-    <div class="image">
-		<Image
-            class="profile-pic"
-            src={meImage}
-            format="webp"
-            alt="Me"
-            title="This is me!"
-            width="225"
-            height="225"
-        />
-    </div>
+  <div class="image">
+    <Image
+      class="profile-pic"
+      src={meImage}
+      format="webp"
+      alt="Me"
+      title="This is me!"
+      width="192"
+      height="192"
+    />
+  </div>
 
-    <div class="socials">
-        
-    </div>
+  <h1>Simon Hamelin</h1>
 
-    <h1>Hi! I'm Simon.</h1>
+  <div class="socials">
+    <a
+      class="social"
+      href="https://stackoverflow.com/users/20914374/hex"
+      title="Stack Overflow profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-stack-overflow"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://github.com/shamelin"
+      title="GitHub profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://gitlab.com/shamelin"
+      title="GitLab profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-gitlab" style="font-size: 16px;"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://discord.com/users/206140115339182080"
+      title="Discord profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-discord" style="font-size: 16px;"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://hub.docker.com/u/shamelinhex"
+      title="Docker Hub profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-docker"></i>
+    </a>
+
+    <a
+      class="social"
+      href="https://www.linkedin.com/in/shamelin/"
+      title="LinkedIn profile"
+      target="_blank"
+    >
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a class="social" href="mailto:hi@shamelin.me" title="Send me an e-mail!">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  </div>
 </div>
 
 <style>
-    .profile {
-        margin: auto;
-    }
+  .profile {
+    margin: auto;
+    text-align: center;
+  }
 
-    .profile-pic {
-        border-radius: 50%;
-        -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.15); 
-        box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.15);
-    }
+  .profile-pic {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.15);
+    margin: auto;
+  }
 
-    h1 {
-        color: white;
-        letter-spacing: 1px;
-        text-align: center;
-        font-weight: 400;
-    }
+  h1 {
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0.67rem;
+  }
+
+  .socials {
+    margin: 0.5rem 0 1rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 200px;
+    padding: 8px 18px;
+  }
+
+  .social {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    text-decoration: none;
+    transition: background 150ms;
+    margin-right: 8px;
+  }
+
+  .social:last-of-type {
+    margin-right: 0;
+  }
+
+  .social:hover {
+    background: rgba(255, 255, 255, 0.55);
+  }
+
+  .social i {
+    color: #3242a3;
+    font-size: 18px;
+    padding: 0;
+    margin: auto;
+  }
 </style>

@@ -78,7 +78,7 @@ export class CornerFluid {
      * Execute this function multiple times to get a smooth animation.
      */
     update(c: CanvasRenderingContext2D) {
-        this.theta += 0.01;
+        this.theta += 0.005;
         this.thetaRamp += (this.thetaRampDest - this.thetaRamp) / this.thetaRampDelta;
 
         // We recalculate the wobbles for each segment.

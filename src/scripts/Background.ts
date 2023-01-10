@@ -41,8 +41,8 @@ export class Background {
         this.canvas.height = window.innerHeight;
 
         this.gradient = this.c?.createLinearGradient(0, this.canvas.height, this.canvas.width, 0);
-        this.gradient?.addColorStop(0, `hsl(${this.hueGradientStart}, 100%, 40%)`);
-        this.gradient?.addColorStop(1, `hsl(${this.hueGradientEnd}, 100%, 40%)`);
+        this.gradient?.addColorStop(0, `#283593`);
+        this.gradient?.addColorStop(1, `#3f51b5`);
 
         document.body.appendChild(this.canvas);
     }
